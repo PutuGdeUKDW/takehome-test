@@ -1,1 +1,7 @@
+In the logreader.py script I wrote, the objective is to read logs from the past 10 minutes while counting the total occurrences of HTTP error 500. To accomplish this, I used the file-read-backwards library, which can be installed by running the command:
 
+pip install file-read-backwards
+
+I chose this library specifically because it allows the script to read the log files from the bottom upwards. Since log entries are appended at the end, I hope this approach would give a quicker end result.
+
+Also, I've provide two log files that I generated from ChatGPT that I use for testing purposes. If the script is tested with other log files, simply commenting and uncommenting the current_time variable at lines 12-13 will allow the script to adjust to the logs.
