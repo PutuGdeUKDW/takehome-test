@@ -1,1 +1,8 @@
+I have created a run.sh script that deploys both SonarQube and Postgres Docker containers, assuming Docker and Docker Compose are already installed on the machine. The configuration should meet the requirements as outlined.
 
+Regarding SonarQube, I recently learned how to deploy it, and during this process, I discovered that recent versions of SonarQube already come with a built-in Golang plugin. This was confirmed by the following error message:
+sonarqube    | Caused by: org.sonar.api.utils.MessageException: Found a plugin 'SonarGo' in the directory 'extensions/plugins' with the same key [go] as a built-in feature 'Go Code Quality and Security'. Please remove 'extensions/plugins/sonar-golang-plugin-1.2.11.jar'.
+
+From this, I concluded that the built-in Golang plugin should automatically fulfill Test Case 1, Requirement 4, meaning SonarQube already includes the necessary support for Golang.
+
+As for the .env file, while best practices suggest storing sensitive information in a secure location such as an S3 bucket, for the sake of this assignment, I have uploaded it to the repository for convenience. I would never do this in a live scenario.
