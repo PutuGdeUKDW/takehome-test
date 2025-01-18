@@ -1,0 +1,2 @@
+127.0.0.1 user-identifier matt [10/Oct/2022:14:03:10 +0000] "POST /api/delete HTTP/1.1" 500 4123
+127.0.0.1 user-identifier eva [10/Oct/2022:14:03:45 +0000] "GET /logout HTTP/1.0" 200 987
